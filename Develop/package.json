@@ -1,13 +1,17 @@
 {
-  "name": "static-site",
+  "name": "ReadMe-creator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tool used to generate a Professional ReadMe file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Robbie K",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shorty008/ReadMe/issues"
+  },
+  "homepage": "https://github.com/shorty008/ReadMe#ReadMe",
   "dependencies": {
     "inquirer": "^6.3.1"
   }
