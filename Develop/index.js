@@ -1,10 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs')
-const generateMarkdown = require("./utils/generateMarkdown")
+const fs = require('fs');
+const generatePage = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const readMeQuestions = (answers) => {
+const readMeQuestions = (data) => {
     return inquirer.promt([
 
         //Title question 
@@ -153,7 +153,7 @@ const readMeQuestions = (answers) => {
                 }
             }
         },
-    ])
+    ]);
 };
 
 // TODO: Create a function to write README file
@@ -166,14 +166,10 @@ const writeToFile = data => {
 };
 
 // TODO: Create a function to initialize app
-function init() 
-    .then(answers => {
-        return generateMarkdown(answers);
+const readMeQuestions()
+    .then(data => {
+        return generateMarkdown(data);
     })
     .then(data => {
         return writeToFile(data);
     })
-
-// Function call to initialize app
-
-init();
