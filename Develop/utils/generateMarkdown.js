@@ -2,12 +2,11 @@
 //If there is no license, return an empty string
 function renderLicenseBadge(license) {
   var license = `${data.licenses}`;
-  
-  if (license === 'NA'){
-   return ``
-  }
-  else {
-    return `![Github license](http://img.shields.io/badge/License-${license}-blue.svg)`
+
+  if (license === "NA") {
+    return ``;
+  } else {
+    return `![Github license](http://img.shields.io/badge/License-${license}-blue.svg)`;
   }
 }
 
@@ -44,10 +43,10 @@ function generateMarkdown(data) {
   ${data.licenses}
 
   ## Questions?
-  You can find my projects at [GitHub Repo] https://github.com/${templatedata.username}
+  You can find my projects at [GitHub Repo] https://github.com/${data.username}
   
   [Contact Us] ${data.email}
   `;
-};
+}
 
 module.exports = generateMarkdown;
