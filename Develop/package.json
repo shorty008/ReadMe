@@ -1,5 +1,5 @@
 {
-  "name": "ReadMe-creator",
+  "name": "read-me-creator",
   "version": "1.0.0",
   "description": "Tool used to generate a Professional ReadMe file",
   "main": "index.js",
